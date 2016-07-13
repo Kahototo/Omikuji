@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="朝日.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tVv-El-dJw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="朝日.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tVv-El-dJw">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph6-4c-r4M">
-                                <rect key="frame" x="62" y="120" width="197" height="327"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph6-4c-r4M">
+                                <rect key="frame" x="58" y="120" width="205" height="327"/>
                                 <state key="normal" title="Button" image="omikuji-box.png"/>
                                 <connections>
                                     <segue destination="i1I-fN-83B" kind="presentation" id="7Sb-vf-Aqh"/>
@@ -29,6 +30,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ph6-4c-r4M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="48v-Wu-YgK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tVv-El-dJw" secondAttribute="trailing" constant="-20" id="H06-ak-ucg"/>
+                            <constraint firstItem="ph6-4c-r4M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="HL5-4o-K0T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ph6-4c-r4M" secondAttribute="bottom" constant="121" id="IfN-4T-9HH"/>
+                            <constraint firstItem="tVv-El-dJw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="beV-4m-cSR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ph6-4c-r4M" secondAttribute="trailing" constant="41" id="t3V-hS-aom"/>
+                            <constraint firstItem="tVv-El-dJw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yV0-6m-C2p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tVv-El-dJw" secondAttribute="bottom" id="zDL-Wg-8NL"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -48,25 +59,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="扇子.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-H3-Nd5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="扇子.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cdS-H3-Nd5">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChS-A3-2WA">
-                                <rect key="frame" x="36" y="406" width="249" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChS-A3-2WA">
+                                <rect key="frame" x="32" y="332" width="257" height="151"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="もどる"/>
                                 <connections>
                                     <action selector="modoru" destination="i1I-fN-83B" eventType="touchUpInside" id="RVj-CX-Ln0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpF-gV-PAt">
-                                <rect key="frame" x="35" y="103" width="250" height="180"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpF-gV-PAt">
+                                <rect key="frame" x="31" y="103" width="258" height="106"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="88"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NpF-gV-PAt" firstAttribute="top" secondItem="nEB-gp-LcR" secondAttribute="bottom" constant="83" id="0kI-g4-Jxm"/>
+                            <constraint firstItem="NpF-gV-PAt" firstAttribute="leading" secondItem="7ur-vg-MEZ" secondAttribute="leadingMargin" constant="15" id="8Dt-6t-v35"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cdS-H3-Nd5" secondAttribute="trailing" constant="-20" id="BnU-j5-zRc"/>
+                            <constraint firstItem="ChS-A3-2WA" firstAttribute="top" secondItem="NpF-gV-PAt" secondAttribute="bottom" constant="123" id="Lfd-ip-t95"/>
+                            <constraint firstItem="cdS-H3-Nd5" firstAttribute="leading" secondItem="7ur-vg-MEZ" secondAttribute="leadingMargin" constant="-20" id="Qri-LV-Arj"/>
+                            <constraint firstItem="ChS-A3-2WA" firstAttribute="top" secondItem="NpF-gV-PAt" secondAttribute="bottom" constant="123" id="Rx4-w2-Siw"/>
+                            <constraint firstItem="fK1-C8-R1k" firstAttribute="top" secondItem="cdS-H3-Nd5" secondAttribute="bottom" id="eOK-ro-vAy"/>
+                            <constraint firstItem="cdS-H3-Nd5" firstAttribute="top" secondItem="7ur-vg-MEZ" secondAttribute="topMargin" id="ghG-3t-rHD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NpF-gV-PAt" secondAttribute="trailing" constant="15" id="lL1-Iv-Ad6"/>
+                            <constraint firstItem="ChS-A3-2WA" firstAttribute="leading" secondItem="7ur-vg-MEZ" secondAttribute="leadingMargin" constant="16" id="snn-rE-kwd"/>
+                            <constraint firstItem="fK1-C8-R1k" firstAttribute="top" secondItem="ChS-A3-2WA" secondAttribute="bottom" constant="85" id="toB-N5-C0p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ChS-A3-2WA" secondAttribute="trailing" constant="15" id="zOD-fF-LXb"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
