@@ -14,6 +14,10 @@
 		5E530FF91D36588B00320502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E530FF71D36588B00320502 /* LaunchScreen.storyboard */; };
 		5E5310041D36588B00320502 /* omikujiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5310031D36588B00320502 /* omikujiTests.swift */; };
 		5E53100F1D36588C00320502 /* omikujiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E53100E1D36588C00320502 /* omikujiUITests.swift */; };
+		5E53101D1D3658A100320502 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E53101C1D3658A100320502 /* ResultViewController.swift */; };
+		5E5310201D3659D900320502 /* 扇子.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E53101E1D3659D900320502 /* 扇子.jpg */; };
+		5E5310211D3659D900320502 /* 朝日.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E53101F1D3659D900320502 /* 朝日.jpg */; };
+		5E5310231D3659ED00320502 /* omikuji-box.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5310221D3659ED00320502 /* omikuji-box.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		5E53100A1D36588C00320502 /* omikujiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = omikujiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E53100E1D36588C00320502 /* omikujiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omikujiUITests.swift; sourceTree = "<group>"; };
 		5E5310101D36588C00320502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E53101C1D3658A100320502 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		5E53101E1D3659D900320502 /* 扇子.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "扇子.jpg"; sourceTree = "<group>"; };
+		5E53101F1D3659D900320502 /* 朝日.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "朝日.jpg"; sourceTree = "<group>"; };
+		5E5310221D3659ED00320502 /* omikuji-box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "omikuji-box.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,12 @@
 		5E530FED1D36588B00320502 /* omikuji */ = {
 			isa = PBXGroup;
 			children = (
+				5E5310221D3659ED00320502 /* omikuji-box.png */,
+				5E53101E1D3659D900320502 /* 扇子.jpg */,
+				5E53101F1D3659D900320502 /* 朝日.jpg */,
 				5E530FEE1D36588B00320502 /* AppDelegate.swift */,
 				5E530FF01D36588B00320502 /* ViewController.swift */,
+				5E53101C1D3658A100320502 /* ResultViewController.swift */,
 				5E530FF21D36588B00320502 /* Main.storyboard */,
 				5E530FF51D36588B00320502 /* Assets.xcassets */,
 				5E530FF71D36588B00320502 /* LaunchScreen.storyboard */,
@@ -232,6 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5310231D3659ED00320502 /* omikuji-box.png in Resources */,
+				5E5310211D3659D900320502 /* 朝日.jpg in Resources */,
+				5E5310201D3659D900320502 /* 扇子.jpg in Resources */,
 				5E530FF91D36588B00320502 /* LaunchScreen.storyboard in Resources */,
 				5E530FF61D36588B00320502 /* Assets.xcassets in Resources */,
 				5E530FF41D36588B00320502 /* Main.storyboard in Resources */,
@@ -261,6 +276,7 @@
 			files = (
 				5E530FF11D36588B00320502 /* ViewController.swift in Sources */,
 				5E530FEF1D36588B00320502 /* AppDelegate.swift in Sources */,
+				5E53101D1D3658A100320502 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
