@@ -16,13 +16,19 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let omikuziArray: [String] = ["大吉","吉","吉","吉","中吉","中吉","小吉","小吉","小吉","凶"]
-        
-        //乱数
-        
         let number = Int(rand() % 10)
         
-        myLabel.text = omikuziArray[number]
+        if number == 0 {
+            myLabel.text = String("大吉")
+        }else if number <= 2 {
+            myLabel.text = String("中吉")
+        }else if number <= 5 {
+            myLabel.text = String("吉")
+        }else if number <= 8 {
+            myLabel.text = String("小吉")
+        }else {
+            myLabel.text = String("凶")
+        }
         
         if myLabel.text == "大吉" {
             myLabel.textColor = UIColor.redColor()
@@ -32,17 +38,16 @@ class ResultViewController: UIViewController {
         
     }
     
-    override func didReceiveMemoryWarning(){
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-    }
-    
     @IBAction func modoru() {
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
+    override func didReceiveMemoryWarning(){
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     
     
